@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>YouTube-Clone</title>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+        integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="ytclone.css">
+</head>
+
+<body>
+
+    <div class="master_container">
+        <div class="master_container" id="menulogo_cont">
+            <button><i class="fa-solid fa-bars fa-1x"></i></button>
+            <a class="logolink" href="https://youtube.com"><img class="logox" src="resources\logo-dark-theme-croped.png"
+                    style="height: 20px; width: 90px;"></a>
+        </div>
+        <div id="search_bar" class="master_container">
+            <form action="" class="searcbox">
+                <input class="search_1" type="text" placeholder="Search">
+                <button class="btn_black searchbox_btn" type="submit"><i class="fa fa-search"></i></button>
+            </form>
+            <button class="btn_black mic"><i class="fa fa-microphone"></i></button>
+        </div>
+        <div class="master_container">
+            <button class="topbarright"><i class="fa-regular fa-bell"></i></button>
+            <button class="topbarright"><i class="fa fa-video-camera"></i></button>
+            <button class="profileicon topbarright"><i class="fa fa-p"></i></button>
+        </div>
+    </div>
+    <br>
+    <div class="main_content">
+        <div class="videoandcomment">
+            <div class="videoframe">
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/Ep6HhI1mpko" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+            </div>
+            <br>
+            <div class="channelbar">
+                <div class="channeldata">
+                    <img class="channelicon"
+                        src="https://yt3.ggpht.com/ytc/AMLnZu-1SOWcwcK3QGxz1kl145xbRkD-n8PVrC9p8RVR4w=s68-c-k-c0x00ffffff-no-rj"
+                        alt="">
+                    <ul class="channelname">
+                        <li><b>Dave2D</b></li>
+                        <li style="font-size:smaller;">35.9 lakh subscribers</li>
+                    </ul>
+                </div>
+
+                <button class="subsbtn_w">Join</button>
+                <button class="subsbtn"> <i class="fa-regular fa-bell"></i>Subscribed<i
+                        class="fa fa-angle-down"></i></button>
+
+                <form class="likedislike" action="">
+                    <button id="like" class="btn_black" type="submit"><i class="fa-regular fa-thumbs-up"></i> 55k
+                    </button>
+                    <p> | </p>
+                    <button id="dislike" class="btn_black" type="submit"><i class="fa-regular fa-thumbs-down"></i>
+                    </button>
+                </form>
+                <button id="sharebtn" class="subsbtn"><i class="fa fa-share"></i>Share</button>
+                <button class="subsbtn"><i class="fa fa-ellipsis"></i></button>
+
+            </div>
+            <div class="descriptionbox">
+                <h4>12 lakh views 6 days ago </h4>
+                <p>The Double Screen YogaBook Laptop <br>
+
+                    If you'd like to support the channel, consider a Dave2D <br><br> membership by clicking the “Join” button above! <br><br>
+                    
+                   <a href=" http://twitter.com/Dave2D"> http://twitter.com/Dave2D</a> <br>
+                    <a href="http://www.instagram.com/Dave2D">http://www.instagram.com/Dave2D</a> <br>
+                    <a href="https://discord.gg/Dave2D">https://discord.gg/Dave2D</a> <br><br>
+                    
+                    Purchases made from store links may give me some money. <br>
+                    (It doesn’t cost you extra, so please buy everything)
+                    Follow me: <br>
+                    <a href="http://twitter.com/Dave2D">http://twitter.com/Dave2D</a> <br>
+                    <a href="http://www.instagram.com/Dave2D">http://www.instagram.com/Dave2D</a><br></p>
+                <h4>Show less</h4>
+            </div>
+        </div>
+    </div>
+
+
+
+
+</body>
+
+</html>
