@@ -7,143 +7,185 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
     <script src="https://cdn.tailwindcss.com"></script>
+    <script src="formscript.js"></script>
     <title>Document</title>
 </head>
 
 <body>
-    <nav class="flex h-12 flex-row bg-gray-300 text-purple-500 shadow-md justify-between">
+    <nav class="flex h-12 flex-row bg-gray-300 text-purple-600 shadow-md justify-between">
         <div class="py-1.5 px-1 ml-4">
             <!-- <img src="Resources/B-cropped.png" alt="img unavailable" class="h-8"> -->
             <h1 class="text-xl font-semibold p-0.5 text-gray-800 border-2 border-gray-800">CHRONICLER</h1>
         </div>
-        <div>
+        <div class="flex flex-row items-center mr-4">
             <ul class="px-2  mr-5 flex space-x-7 justify-end">
-                <li class="cursor-pointer px-2 py-3  hover:text-purple-600 duration-75">Home</li>
-                <li class="cursor-pointer px-2 py-3  hover:text-purple-600 duration-75">Magazine</li>
-                <li class="cursor-pointer px-2 py-3  hover:text-purple-600 duration-75">State</li>
-                <li class="cursor-pointer px-2 py-3  hover:text-purple-600 duration-75">National</li>
-                <li class="cursor-pointer px-2 py-3  hover:text-purple-600 duration-75">International</li>
-                <li class="cursor-pointer px-2 py-3  hover:text-purple-600 duration-75">About</li>
-                <li class="cursor-pointer px-2 py-3  hover:text-purple-600 duration-75">Contact</li>
+                <li class="cursor-pointer px-2 py-3  hover:text-purple-700 duration-75"><a href="./#Home">Home</a></li>
+                <li class="cursor-pointer px-2 py-3  hover:text-purple-700 duration-75">Magazine</li>
+                <li class="cursor-pointer px-2 py-3  hover:text-purple-700 duration-75">State</li>
+                <li class="cursor-pointer px-2 py-3  hover:text-purple-700 duration-75">National</li>
+                <li class="cursor-pointer px-2 py-3  hover:text-purple-700 duration-75">International</li>
+                <li class="cursor-pointer px-2 py-3  hover:text-purple-700 duration-75">About</li>
+                <li class="cursor-pointer px-2 py-3  hover:text-purple-700 duration-75">Contact</li>
             </ul>
+            <form action="">
+                <a href="sign_in.html"
+                    class="bg-gray-300 border-r-2 hover:text-purple-700 border-gray-400 rounded-r-none text-purple-600 rounded-full p-1.5">Sign
+                    in</a>
+                <a href="sign_up.html"
+                    class="bg-gray-300 hover:text-purple-700 rounded-l-none  text-purple-600 rounded-full p-1 pl-0">Sign
+                    up</a>
+            </form>
         </div>
     </nav>
     <div class="h-8"></div>
     <main class="flex flex-row">
-        <div class="landing flex flex-row h-max">
+        <div id="Home" class="landing flex flex-row h-max">
 
             <div class="h-screen w-40"></div>
-        <div class="flex flex-col h-max">
-            <div class="flex flex-row">
-                <!-- Hot Topics -->
-                <div class="Hotnews">
-                    <div class="photo">
-                        <img class=" cursor-pointer  h-96 rounded-l"
-                            src="https://www.ft.com/__origami/service/image/v2/images/raw/https://d1e00ek4ebabms.cloudfront.net/production/ee50ce9c-24bb-41e7-8d96-07bc9ca84c02.jpg?source=next&fit=scale-down&quality=highest&width=1067"
-                            alt="">
-                    </div>
-                    <div>
-                        <h1 class="cursor-pointer text-2xl text-gray-700 font-semibold">Gautam Adani's Embattled Empire</h1>
-                        <h4 class="cursor-pointer text-purple-500">Lorem ipsum</h4>
-                        <hr class="mt-2 bg-gray-700 h-0.5">
-                    </div>
-                </div>
-
-            </div>
-            <!-- rest of the news -->
-            <div class="flex flex-col mt-5 ">
+            <div class="flex flex-col h-max">
                 <div class="flex flex-row">
-                    <div class="pannel-1 flex flex-row">
-                        <div>
-                            <img class="cursor-pointer w-44 h-28"
-                                src="https://legaldesire.com/wp-content/uploads/2021/04/AdobeStock_205600667.jpeg" alt="">
-                        </div>
-                        <div class="cursor-pointer pl-2 w-40 text-xs">
-                            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Excepturi, amet iure quo sint
-                                incidunt optio reprehenderit temporibus id corrupti commodi.</p>
-                            <h4 class="text-purple-500">Lorem ipsum</h4>
-                        </div>
-                    </div>
-                    <div class="ml-4 pannel-2 flex flex-row">
-                        <div>
-                            <img class="cursor-pointer  w-44 h-28" src="https://www.punekarnews.in/wp-content/uploads/2022/07/Accident.jpg"
+                    <!-- Hot Topics -->
+                    <div class="Hotnews">
+                        <div class="photo">
+                            <img class=" cursor-pointer  h-96 rounded-l"
+                                src="https://www.ft.com/__origami/service/image/v2/images/raw/https://d1e00ek4ebabms.cloudfront.net/production/ee50ce9c-24bb-41e7-8d96-07bc9ca84c02.jpg?source=next&fit=scale-down&quality=highest&width=1067"
                                 alt="">
                         </div>
-                        <div class="cursor-pointer pl-2 w-40 text-xs">
-                            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Excepturi, amet iure quo sint
-                                incidunt optio reprehenderit temporibus id corrupti commodi.</p>
-                            <h4 class="text-purple-500">Lorem ipsum</h4>
+                        <div>
+                            <h1 class="cursor-pointer text-2xl text-gray-700 font-semibold">Gautam Adani's Embattled
+                                Empire</h1>
+                            <h4 class="cursor-pointer text-purple-600">Lorem ipsum</h4>
+                            <hr class="mt-2 bg-gray-700 h-0.5">
                         </div>
                     </div>
-                </div>
-                <div class=" mt-5">
-                    <hr class=" bg-gray-700 h-0.5">
-                </div>
-            </div>
-            
-        </div>
-        <!-- side hot topics -->
-        <div class="pl-3 justify-between h-max flex flex-col">
-            <div class="cursor-pointer pannel-1 pb-2 flex flex-col">
-                <div>
-                    <img class=" w-44 h-28 justify-start"
-                        src="https://upload.wikimedia.org/wikipedia/commons/a/ab/Oil_platform_P-51_%28Brazil%29.jpg" alt="">
-                </div>
-                <div class=" w-44 text-xs pt-1 text-left ">
-                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Excepturi, amet iure quo sint
-                        incidunt optio reprehenderit .</p>
-                        <h4 class="text-purple-500">Lorem ipsum</h4>
-                </div>
-            </div>
-            <div class="cursor-pointer  pannel-2 pb-2 flex flex-col">
-                <div>
-                    <img class="justify-start w-44 h-28" src="https://keralakaumudi.com/web-news/2021/04/NEKM0151748/image/censex.1617302938.jpg"
-                        alt="">
-                </div>
-                <div class="w-44 text-xs pt-1 text-left">
-                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Excepturi, amet iure quo sint
-                        incidunt optio reprehenderit .</p> cursor-pointer
-                        <h4 class="text-purple-500">Lorem ipsum</h4>
-                </div>
-            </div>
-            <div class="cursor-pointer  pannel-3 flex flex-col">
-                <div>
-                    <img class="justify-start w-44 h-28" src="https://static.toiimg.com/photo/msid-61690539/61690539.jpg"
-                        alt="">
-                </div>
-                <div class="w-44 text-xs pt-1 text-left">
-                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Excepturi, amet iure quo sint
-                        incidunt optio reprehenderit .</p>
-                    <h4 class="text-purple-500">Lorem ipsum</h4>
-                </div>
-            </div>
-        </div>
-        <!-- Headlines -->
-        <div class="px-8">
-            <div>
-                <h2 class="text-2xl text-purple-500 underline underline-offset-4 decoration-2">Headlines</h2>
-                
-            </div>
-            <ul class="list-disc marker:text-purple-500">
-                <li class="mt-3 text-gray-700 text-sm w-60 cursor-pointer mb-3 hover:bg-gray-100 hover:shadow">Lorem ipsum dolor sit amet consectetur adipisicing
-                    elit. Facere nihil dignissimos explicabo quas eveniet! Nesciunt.</li>
-                <li class="text-gray-700 text-sm w-60 cursor-pointer mb-3 hover:bg-gray-100 hover:shadow">Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                    Facere nihil dignissimos explicabo quas eveniet! Nesciunt.</li>
-                <li class=" text-gray-700 text-sm w-60 cursor-pointer mb-3 hover:bg-gray-100 hover:shadow">Lorem ipsum dolor sit amet consectetur adipisicing
-                    elit. Facere nihil dignissimos explicabo quas eveniet! Nesciunt.</li>
-                <li class="text-gray-700 text-sm w-60 cursor-pointer mb-3 hover:bg-gray-100 hover:shadow">Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                    Facere nihil dignissimos explicabo quas eveniet! Nesciunt.</li>
-                <li class=" text-gray-700 text-sm w-60 cursor-pointer mb-3 hover:bg-gray-100 hover:shadow">Lorem ipsum dolor sit amet consectetur adipisicing
-                    elit. Facere nihil dignissimos explicabo quas eveniet! Nesciunt.</li>
-                <li class="text-gray-700 text-sm w-60 cursor-pointer mb-3 hover:bg-gray-100 hover:shadow">Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                    Facere nihil dignissimos explicabo quas eveniet! Nesciunt.</li>
-            </ul>
 
-        </div>
-        <div class="h-screen w-40 justify-end"></div>
+                </div>
+                <!-- rest of the news -->
+                <div class="flex flex-col mt-5 ">
+                    <div class="flex flex-row">
+                        <div class="pannel-1 flex flex-row">
+                            <div>
+                                <img class="cursor-pointer w-44 h-28"
+                                    src="https://legaldesire.com/wp-content/uploads/2021/04/AdobeStock_205600667.jpeg"
+                                    alt="">
+                            </div>
+                            <div class="cursor-pointer pl-2 w-40 text-xs">
+                                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Excepturi, amet iure quo
+                                    sint
+                                    incidunt optio reprehenderit temporibus id corrupti commodi.</p>
+                                <h4 class="text-purple-600">Lorem ipsum</h4>
+                            </div>
+                        </div>
+                        <div class="ml-4 pannel-2 flex flex-row">
+                            <div>
+                                <img class="cursor-pointer  w-44 h-28"
+                                    src="https://www.punekarnews.in/wp-content/uploads/2022/07/Accident.jpg" alt="">
+                            </div>
+                            <div class="cursor-pointer pl-2 w-40 text-xs">
+                                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Excepturi, amet iure quo
+                                    sint
+                                    incidunt optio reprehenderit temporibus id corrupti commodi.</p>
+                                <h4 class="text-purple-600">Lorem ipsum</h4>
+                            </div>
+                        </div>
+                    </div>
+                    <div class=" mt-5">
+                        <hr class=" bg-gray-700 h-0.5">
+                    </div>
+                </div>
+
+            </div>
+            <!-- side hot topics -->
+            <div class="pl-3 justify-between h-max flex flex-col">
+                <div class="cursor-pointer pannel-1 pb-2 flex flex-col">
+                    <div>
+                        <img class=" w-44 h-28 justify-start"
+                            src="https://upload.wikimedia.org/wikipedia/commons/a/ab/Oil_platform_P-51_%28Brazil%29.jpg"
+                            alt="">
+                    </div>
+                    <div class=" w-44 text-xs pt-1 text-left ">
+                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Excepturi, amet iure quo sint
+                            incidunt optio reprehenderit .</p>
+                        <h4 class="text-purple-600">Lorem ipsum</h4>
+                    </div>
+                </div>
+                <div class="cursor-pointer  pannel-2 pb-2 flex flex-col">
+                    <div>
+                        <img class="justify-start w-44 h-28"
+                            src="https://keralakaumudi.com/web-news/2021/04/NEKM0151748/image/censex.1617302938.jpg"
+                            alt="">
+                    </div>
+                    <div class="w-44 text-xs pt-1 text-left">
+                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Excepturi, amet iure quo sint
+                            incidunt optio reprehenderit .</p> cursor-pointer
+                        <h4 class="text-purple-600">Lorem ipsum</h4>
+                    </div>
+                </div>
+                <div class="cursor-pointer  pannel-3 flex flex-col">
+                    <div>
+                        <img class="justify-start w-44 h-28"
+                            src="https://static.toiimg.com/photo/msid-61690539/61690539.jpg" alt="">
+                    </div>
+                    <div class="w-44 text-xs pt-1 text-left">
+                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Excepturi, amet iure quo sint
+                            incidunt optio reprehenderit .</p>
+                        <h4 class="text-purple-600">Lorem ipsum</h4>
+                    </div>
+                </div>
+            </div>
+            <!-- Headlines -->
+            <div class="px-8">
+                <div>
+                    <h2 class="text-2xl text-purple-600 underline underline-offset-4 decoration-2">Headlines</h2>
+
+                </div>
+                <ul class="list-disc marker:text-purple-600">
+                    <li class="mt-3 text-gray-700 text-sm w-60 cursor-pointer mb-3 hover:bg-gray-100 hover:shadow">Lorem
+                        ipsum dolor sit amet consectetur adipisicing
+                        elit. Facere nihil dignissimos explicabo quas eveniet! Nesciunt.</li>
+                    <li class="text-gray-700 text-sm w-60 cursor-pointer mb-3 hover:bg-gray-100 hover:shadow">Lorem
+                        ipsum dolor sit amet consectetur adipisicing elit.
+                        Facere nihil dignissimos explicabo quas eveniet! Nesciunt.</li>
+                    <li class=" text-gray-700 text-sm w-60 cursor-pointer mb-3 hover:bg-gray-100 hover:shadow">Lorem
+                        ipsum dolor sit amet consectetur adipisicing
+                        elit. Facere nihil dignissimos explicabo quas eveniet! Nesciunt.</li>
+                    <li class="text-gray-700 text-sm w-60 cursor-pointer mb-3 hover:bg-gray-100 hover:shadow">Lorem
+                        ipsum dolor sit amet consectetur adipisicing elit.
+                        Facere nihil dignissimos explicabo quas eveniet! Nesciunt.</li>
+                    <li class=" text-gray-700 text-sm w-60 cursor-pointer mb-3 hover:bg-gray-100 hover:shadow">Lorem
+                        ipsum dolor sit amet consectetur adipisicing
+                        elit. Facere nihil dignissimos explicabo quas eveniet! Nesciunt.</li>
+                    <li class="text-gray-700 text-sm w-60 cursor-pointer mb-3 hover:bg-gray-100 hover:shadow">Lorem
+                        ipsum dolor sit amet consectetur adipisicing elit.
+                        Facere nihil dignissimos explicabo quas eveniet! Nesciunt.</li>
+                </ul>
+
+            </div>
+            <div class="h-screen w-40 justify-end"></div>
 
         </div>
     </main>
+
+    <footer class="bg-gray-800 text-gray-300 flex flex-row justify-center">
+        <div class="flex flex-col mt-4">
+            <div>
+                <p>We are a independent, completely non bias, crowd funded organization.</p>
+            </div>
+            <hr class="mt-4 mb-4 bg-gray-300">
+            <div class="grid grid-cols-4 gap-8">
+                <div>About</div>
+                <div>Contact Us</div>
+                <div>Privacy Policy</div>
+                <div>Terms and conditions</div>
+                <div>Topics</div>
+                <div>Web notifications</div>
+            </div>
+            <hr class="mt-4 mb-4 bg-gray-300">
+            <div class="flex flex-row mb-4">
+                &copy;<p class="pl-2">Lorem ipsum dolor sit amet consectetur adipisicing.</p>
+            </div>
+        </div>
+    </footer>
 </body>
 
 </html>
