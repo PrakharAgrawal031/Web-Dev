@@ -35,6 +35,8 @@ function sign_up() {
 function undo_error() {
   var name_error = document.getElementById("error_name");
   var pass_error = document.getElementById("error_pass");
+  var username = document.getElementById("name_user");
+  username.style.border = "";
   name_error.textContent = "";
   pass_error.textContent = "";
 }
@@ -42,13 +44,16 @@ function undo_error() {
 //to display error messages
 function set_error_email() {
   var name_error = document.getElementById("error_name");
+  var username = document.getElementById("name_user");
   name_error.textContent = "*Invalid username or email";
-  var timeout = setTimeout(undo_error, 10000);
+  name_error.style.borderColor = "red";
+  username.style.border = "1px solid red";
+  var timeout = setTimeout(undo_error, 5000);
 }
 function set_error_pass() {
   var pass_error = document.getElementById("error_pass");
   pass_error.textContent = "*Invalid password";
-  var timeout = setTimeout(undo_error, 10000);
+  var timeout = setTimeout(undo_error, 5000);
 }
 
 var t_u = { user_name: "" };

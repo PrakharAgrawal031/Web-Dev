@@ -1,0 +1,19 @@
+{
+  "devDependencies": {
+    "autoprefixer": "^10.4.13",
+    "postcss": "^8.4.21",
+    "tailwindcss": "^3.2.7"
+  },
+  "name": "firstreact",
+  "description": "I will be adding my projects and practice code in this repository,",
+  "version": "1.0.0",
+  "main": "tailwind.config.js",
+  "scripts": {
+    "start": "vite"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "vite": "^4.1.3"
+  }
+}
